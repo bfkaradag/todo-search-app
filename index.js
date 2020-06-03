@@ -32,7 +32,7 @@ var deleteItemEvent = (e) =>{
 }
 
 var searchEvent = (e) => {   
-   var text = e.target.value;
+   var text = e.target.value.toLowerCase();
    var itemList = items.children;
 
    Array.from(itemList).forEach(item =>{
